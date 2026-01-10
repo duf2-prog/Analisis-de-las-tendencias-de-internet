@@ -2,16 +2,17 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Chatbot Demo</title>
-  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=2"></script>
+  <title>DummyBot</title>
+ <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 </head>
 <body>
 
-  <df-messenger
-    chat-title="DommyBot"
-    agent-id="f805012c-756b-4755-8161-0e71fb6d4710"
-    language-code="es">
-  </df-messenger>
+<df-messenger
+  intent="WELCOME"
+  chat-title="DommyBot"
+  agent-id="f805012c-756b-4755-8161-0e71fb6d4710"
+  language-code="en"
+></df-messenger>
 
   <script> 
     window.addEventListener('dfMessengerLoaded', function () { 
@@ -22,5 +23,6 @@
   
 </body>
 </html>
+
 
 
