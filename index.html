@@ -3,26 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>DummyBot</title>
- <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=10"></script>
+
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=100"></script>
 </head>
 <body>
 
 <df-messenger
   chat-title="DommyBot"
   agent-id="f805012c-756b-4755-8161-0e71fb6d4710"
-  language-code="es"
-></df-messenger>
+  language-code="es">
+</df-messenger>
 
-  <script> 
-    window.addEventListener('dfMessengerLoaded', function () { 
-      const dfMessenger = document.querySelector('df-messenger');
-      dfMessenger.addEvent('WELCOME'); 
-    }); 
-  </script>
-  
+<script> 
+  window.addEventListener('dfMessengerLoaded', function () { 
+    const dfMessenger = document.querySelector('df-messenger');
+    dfMessenger.addEvent('WELCOME'); 
+  }); 
+</script>
+
 </body>
 </html>
-
-
-
-
