@@ -13,5 +13,13 @@
     language-code="es">
   </df-messenger>
 
+  <script> 
+    window.addEventListener('dfMessengerLoaded', function () { 
+      const dfMessenger = document.querySelector('df-messenger');
+      dfMessenger.addEvent('WELCOME'); 
+    }); 
+  </script>
+  
 </body>
 </html>
+
